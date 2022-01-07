@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btMyPubs"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/my_publications"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btInterestedPubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btMyPubs"
+        android:layout_alignLeft="@id/btMyPubs"
+        android:layout_alignRight="@id/btMyPubs"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@color/colorPrimary"
+        android:foreground="@drawable/logo_bt"
+        android:foregroundGravity="center"/>
+
+</RelativeLayout>

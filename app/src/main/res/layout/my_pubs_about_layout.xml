@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_cloze"
+                android:elevation="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <ViewFlipper
+                android:id="@+id/vFJobPos"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/back"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:id="@+id/vFJobPosTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Job Position"
+                        android:textColor="#CC000000"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_edit"
+                        android:backgroundTint="#DD000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/vFJobPosET"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job Position"
+                            android:textColor="#FF000000" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tVUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/tVCancel"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/confirm" />
+
+                    <TextView
+                        android:id="@+id/tVCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/cancel" />
+
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/vFJobPos"
+                android:background="#33000000" />
+
+            <ViewFlipper
+                android:id="@+id/vFDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@id/divider"
+                android:layout_alignParentLeft="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <include
+                        android:id="@+id/iDate"
+                        layout="@layout/date_time_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/edit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_edit"
+                        android:backgroundTint="#DD000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/inputDate"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/imageView3"
+                        android:layout_alignEnd="@id/imageView3"
+                        android:background="#f9f9f9"
+                        android:text="@string/date_time"
+                        android:textAllCaps="false"
+                        android:textColor="#75000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tVUpdate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toStartOf="@id/tVCancel2"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/confirm" />
+
+                    <TextView
+                        android:id="@+id/tVCancel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/cancel" />
+
+                </RelativeLayout>
+
+            </ViewFlipper>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/vFDateTime"
+                android:background="#33000000" />
+
+            <ViewFlipper
+                android:id="@+id/vFPayment"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/divider2"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:id="@+id/vFPaymentTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/payment"
+                        android:textColor="#CC000000"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/ic_edit"
+                        android:backgroundTint="#DD000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/vFPaymentET"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment"
+                            android:textColor="#FF000000"
+                            android:inputType="numberDecimal"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tVUpdate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/tVCancel3"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/confirm" />
+
+                    <TextView
+                        android:id="@+id/tVCancel3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/cancel" />
+
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/vFPayment"
+                android:background="#33000000" />
+
+            <ViewFlipper
+                android:id="@+id/vFExtra"
+                android:layout_width="wrap_content"
+                android:layout_height="80.5dp"
+                android:layout_below="@id/divider3"
+                android:layout_alignParentLeft="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:id="@+id/vFExtraTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Extra"
+                        android:textColor="#CC000000"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/edit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_edit"
+                        android:backgroundTint="#DD000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/vFExtraET"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="false">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|start"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:maxLines="10"
+                            android:minLines="4"
+                            android:scrollbars="vertical"
+                            android:text="Extra"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tVUpdate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/tVCancel4"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/confirm" />
+
+                    <TextView
+                        android:id="@+id/tVCancel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/hyperLink"
+                        android:text="@string/cancel" />
+
+                </RelativeLayout>
+
+            </ViewFlipper>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/vFExtra"
+                android:background="#33000000" />
+
+            <Button
+                android:id="@+id/intUsers"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="#008057"
+                android:elevation="4dp"
+                android:text="@string/interested_users"
+                android:textAllCaps="false"
+                android:textColor="#CCFFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tV20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/intUsers"
+                android:layout_margin="20dp"
+                android:text="@string/ver_code"
+                android:textColor="#CC000000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/verCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tV20"
+                android:textColor="#CC000000"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/verCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:background="#FFFF0000"
+                android:elevation="4dp"
+                android:foreground="@drawable/delete_icon"
+                android:foregroundGravity="center"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

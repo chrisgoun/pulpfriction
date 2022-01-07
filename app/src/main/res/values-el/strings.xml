@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jobPos">
+        <item>Τοπογράφος</item>
+        <item>Καθαρίστρια</item>
+        <item>Φύλακας</item>
+        <item>Σερβιτόρος</item>
+        <item>Λογιστής</item>
+        <item>Ηλοκτρολόγος</item>
+        <item>Υδραυλικός</item>
+        <item>Γραφίστρια</item>
+        <item>Μάγειρας</item>
+        <item>Babysitter</item>
+    </string-array>
+    <string-array name="fjobPos">
+        <item>Θέση εργασίας</item>
+        <item>Τοπογράφος</item>
+        <item>Καθαρίστρια</item>
+        <item>Φύλακας</item>
+        <item>Σερβιτόρος</item>
+        <item>Λογιστής</item>
+        <item>Ηλοκτρολόγος</item>
+        <item>Υδραυλικός</item>
+        <item>Γραφίστρια</item>
+        <item>Μάγειρας</item>
+        <item>Babysitter</item>
+    </string-array>
+    <string-array name="price">
+        <item>Πληρωμή</item>
+        <item>0 – 20 €</item>
+        <item>21 – 50 €</item>
+        <item>51 – 100 €</item>
+        <item>101 – 150 €</item>
+        <item>>150 €</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Θέση εργασίας</item>
+        <item>Πληρωμή</item>
+        <item>Ημερομηνία</item>
+    </string-array>
+    <string name="interested_users">Ενδιαφερόμενοι Χρήστες</string>
+    <string name="upload">Ανάρτηση</string>
+    <string name="date">Ημ/νία :</string>
+    <string name="time">Ώρα :</string>
+    <string name="notifications">Ειδοποιήσεις</string>
+    <string name="job_type">Θέση Εργασίας :</string>
+    <string name="region">Περιοχή</string>
+    <string name="details">Λεπτομέρειες :</string>
+    <string name="my_publications">Οι Αναρτήσεις μου</string>
+    <string name="name">Όνομα :</string>
+    <string name="payment">Πληρωμή</string>
+    <string name="job_field">Θέση Δραστηριοποίησης</string>
+    <string name="home">Αρχική</string>
+    <string name="profile">Προφίλ</string>
+    <string name="publications">Αναρτήσεις</string>
+    <string name="calendar">Ημερολόγιο</string>
+    <string name="transactions_history">Ιστορικό Πληρωμών</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="about_us">Πληροφορίες</string>
+    <string name="log_out">Αποσύνδεση</string>
+    <string name="rights">Δικαιώματα</string>
+    <string name="help">Βοήθεια</string>
+    <string name="contact_us">Επικοινωνία</string>
+    <string name="language">Γλώσσα :</string>
+    <string name="date_time">Ημερομηνία/Ώρα</string>
+    <string name="confirm">Επιβεβαίωση</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="no_publications_found">Καμία Δημοσίευση</string>
+    <string name="no_interested_users">Κανένας Ενδιαφερόμενος Χρήστης</string>
+    <string name="no_ratings_yet">Καμία Αξιολόγηση</string>
+    <string name="experience">Προϋπηρεσία :</string>
+    <string name="age">Ηλικία :</string>
+    <string name="no_previous_jobs">Δεν υπάρχουν εργασίες</string>
+    <string name="work_in_app">Εργασίες στην εφαρμογή</string>
+    <string name="book_user">Επιλογή χρήστη</string>
+    <string name="first_name">Όνομα</string>
+    <string name="last_name">Επώνυμο</string>
+    <string name="work_experience">Εμπειρία</string>
+    <string name="extra">  Επιπλέον</string>
+    <string name="birthday">Γενέθλια</string>
+    <string name="verification_code">Κωδικός επιβεβαίωσης</string>
+    <string name="completed">Ολοκληρώθηκε</string>
+    <string name="ver_code">Κωδικός επιβεβαίωσης :</string>
+    <string name="intUsersBut">Συνομιλια</string>
+    <string name="sort_by">Ταξινόμηση κατά :</string>
+    <string name="behavior">Συμπεριφορά :</string>
+    <string name="appearance">Εμφάνιση :</string>
+    <string name="knowledge">Γνώσεις :</string>
+    <string name="consistency">Συνέπεια :</string>
+    <string name="workplace">Χώρος Εργασίας :</string>
+    <string name="rating">Αξιολόγιση</string>
+</resources>

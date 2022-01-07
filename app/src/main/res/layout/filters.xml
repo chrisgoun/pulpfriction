@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_cloze"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <Spinner
+        android:id="@+id/spJobPos"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_custom_large"
+        android:entries="@array/fjobPos"
+        android:gravity="start"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textStart"
+        android:layout_below="@id/back"/>
+    <Spinner
+        android:id="@+id/spPricePoint"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_custom_large"
+        android:entries="@array/price"
+        android:gravity="start"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textStart"
+        android:layout_below="@id/spJobPos"/>
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spPricePoint"
+        android:layout_alignStart="@id/spJobPos"
+        android:layout_alignEnd="@id/spJobPos"
+        android:background="#005780"
+        android:text="@string/date_time"
+        android:textAllCaps="false"
+        android:textColor="#CCFFFFFF"
+        android:textSize="21sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@id/date"
+        android:text="@string/sort_by"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <Spinner
+        android:id="@+id/sortBy"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/spinner_custom_large"
+        android:entries="@array/sort"
+        android:gravity="start"
+        android:spinnerMode="dropdown"
+        android:textAlignment="textStart"
+        android:layout_below="@id/textView3"/>
+
+
+</RelativeLayout>

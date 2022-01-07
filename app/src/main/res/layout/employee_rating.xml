@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/behavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/behavior"
+        android:textSize="24sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarBeh"
+        android:layout_toEndOf="@id/behavior"
+        android:layout_alignTop="@id/behavior"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/duskYellow"
+        android:secondaryProgressTint="@color/duskYellow"/>
+
+    <TextView
+        android:id="@+id/ratingsBeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ratingBarBeh"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ratingBarBeh"
+        android:text="(0)"
+        android:textSize="19sp" />
+    <TextView
+    android:id="@+id/appearance"
+    android:layout_below="@id/ratingBarBeh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/appearance"
+    android:textSize="24sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarAp"
+        android:layout_toEndOf="@id/appearance"
+        android:layout_alignTop="@id/appearance"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/duskYellow"
+        android:secondaryProgressTint="@color/duskYellow"/>
+
+    <TextView
+        android:id="@+id/ratingsAp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ratingBarAp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ratingBarAp"
+        android:text="(0)"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/knowledge"
+        android:layout_below="@id/ratingBarAp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/knowledge"
+        android:textSize="24sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarKn"
+        android:layout_toEndOf="@id/knowledge"
+        android:layout_alignTop="@id/knowledge"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/duskYellow"
+        android:secondaryProgressTint="@color/duskYellow"/>
+
+    <TextView
+        android:id="@+id/ratingsKn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ratingBarKn"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ratingBarKn"
+        android:text="(0)"
+        android:textSize="19sp" />
+    <TextView
+        android:id="@+id/consistency"
+        android:layout_below="@id/ratingBarKn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consistency"
+        android:textSize="24sp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBarCo"
+        android:layout_toEndOf="@id/consistency"
+        android:layout_alignTop="@id/consistency"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/duskYellow"
+        android:secondaryProgressTint="@color/duskYellow"/>
+
+    <TextView
+        android:id="@+id/ratingsCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ratingBarCo"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/ratingBarCo"
+        android:text="(0)"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

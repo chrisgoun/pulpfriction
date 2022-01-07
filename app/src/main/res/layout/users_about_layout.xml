@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_cloze"
+                android:elevation="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <include
+                android:id="@+id/profPage"
+                layout="@layout/user_prof_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back"/>
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#005780"
+                android:elevation="4dp"
+                android:text="@string/book_user"
+                android:textAllCaps="false"
+                android:textColor="#CCFFFFFF"
+                android:textSize="20sp"
+                android:layout_below="@+id/profPage"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

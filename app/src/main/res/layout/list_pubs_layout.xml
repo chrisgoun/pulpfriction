@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <TextView
+        android:id="@+id/tVName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tVPubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tVName"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/tVName"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tVJobPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tVName"
+        android:layout_alignStart="@id/tVName"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:text="Job Position"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tVJobPos"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/tVJobPos"
+        android:focusable="false"
+        android:text="1/1/1990"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tVPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tVJobPos"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/tVDate"
+        android:focusable="false"
+        android:text="-€"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/inter"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@id/tVName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/logo"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tVJobPos"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:background="#33000000"
+        android:clickable="false"
+        android:focusable="false" />
+</RelativeLayout>

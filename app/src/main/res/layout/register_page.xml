@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#10000000">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="#00FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:layout_margin="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignStart="@id/imageView3"
+                android:text="Account type :"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="132dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView7"
+                android:layout_alignStart="@id/imageView3"
+                android:background="@drawable/spinner_outline"
+                android:entries="@array/accounType"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignStart="@id/spinner"
+                android:layout_marginTop="0dp"
+                android:text="Gender :"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="132dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView8"
+                android:layout_alignEnd="@id/imageView3"
+                android:background="@drawable/spinner_outline"
+                android:entries="@array/gender"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner1"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/spinner1"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    First Name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner1"
+                android:layout_alignStart="@id/spinner"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    Last Name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputEmail"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputConfPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputPass"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    Confirm Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputSsn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputConfPass"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    SSN"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputSsn"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/outline"
+                    android:hint="    Job"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ViewFlipper
+                android:id="@+id/extension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputJob"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/extComp"
+                    layout="@layout/company" />
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/extension"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_marginTop="5dp"
+                android:text="Birth Date :"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/inputBirthday"
+                layout="@layout/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_alignEnd="@id/imageView3" />
+
+            <include
+                android:id="@+id/textView"
+                layout="@layout/privacy_cookies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputBirthday"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_marginTop="7dp" />
+
+            <Button
+                android:id="@+id/btSU"
+                android:layout_width="150dp"
+                android:layout_height="49dp"
+                android:layout_below="@id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login"
+                android:text="Sign up"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

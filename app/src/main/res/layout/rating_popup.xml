@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_cloze"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/back"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rating"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ViewFlipper
+        android:id="@+id/rVF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/behavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/behavior"
+                android:textSize="24sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarBeh"
+                android:layout_toEndOf="@id/behavior"
+                android:layout_alignTop="@id/behavior"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow"
+                android:isIndicator="false"/>
+            <TextView
+                android:id="@+id/appearance"
+                android:layout_below="@id/ratingBarBeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appearance"
+                android:textSize="24sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarAp"
+                android:layout_toEndOf="@id/appearance"
+                android:layout_alignTop="@id/appearance"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow"
+                android:isIndicator="false"/>
+            <TextView
+                android:id="@+id/knowledge"
+                android:layout_below="@id/ratingBarAp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/knowledge"
+                android:textSize="24sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarKn"
+                android:layout_toEndOf="@id/knowledge"
+                android:layout_alignTop="@id/knowledge"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow"
+                android:isIndicator="false"/>
+            <TextView
+                android:id="@+id/consistency"
+                android:layout_below="@id/ratingBarKn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consistency"
+                android:textSize="24sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBarCo"
+                android:layout_toEndOf="@id/consistency"
+                android:layout_alignTop="@id/consistency"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow"
+                android:isIndicator="false"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/behaviorE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/behavior"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarBehE"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/behaviorE"
+                android:layout_toEndOf="@id/behaviorE"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow" />
+
+            <TextView
+                android:id="@+id/environment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingBarBehE"
+                android:text="@string/workplace"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarApE"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/environment"
+                android:layout_toEndOf="@id/environment"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow" />
+
+            <TextView
+                android:id="@+id/consistencyE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingBarApE"
+                android:text="@string/consistency"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarCoE"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/consistencyE"
+                android:layout_toEndOf="@id/consistencyE"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="@color/duskYellow"
+                android:secondaryProgressTint="@color/duskYellow" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/rate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#005780"
+        android:elevation="4dp"
+        android:text="Confirm Rating"
+        android:textAllCaps="false"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/rVF"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

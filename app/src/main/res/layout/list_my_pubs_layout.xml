@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <TextView
+        android:id="@+id/tVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/jobState"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:text="Date"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tVJobPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/jobState"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tVDate"
+        android:focusable="false"
+        android:text="Job Position"
+        android:textColor="#CC000000"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/jobState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="33dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/jobState"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:background="#33000000"
+        android:clickable="false"
+        android:focusable="false" />
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By clicking 'Sign up', you agree to Pulp"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tV17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friction's User Agreement "
+        android:layout_below="@id/textView16"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/privacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tV17"
+        android:layout_below="@id/textView16"
+        android:text="Privacy Policy"
+        android:textSize="15sp"
+        android:textColor="#0645AD"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/privacyPolicy"
+        android:layout_alignParentLeft="true"
+        android:text=" and "
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/cookiePolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/privacyPolicy"
+        android:layout_toRightOf="@id/textView18"
+        android:text="Cookie Policy"
+        android:textSize="15sp"
+        android:textColor="#0645AD"/>
+</RelativeLayout>

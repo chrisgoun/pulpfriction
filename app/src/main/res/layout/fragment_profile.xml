@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:clickable="true">
+
+            <ViewFlipper
+                android:id="@+id/vFProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edit"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ic_edit" />
+
+                    <include
+                        layout="@layout/user_prof_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/inputProfPic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputName"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputProfPic"
+                        android:layout_alignStart="@id/inputProfPic"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="@string/first_name"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputLastName"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputProfPic"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_alignParentEnd="true"
+                        app:errorEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="@string/last_name"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputWorkExp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputName"
+                        android:layout_alignStart="@id/inputProfPic"
+                        android:layout_alignEnd="@id/inputLastName"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="@string/experience"
+                            android:inputType="textPersonName"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/bdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/inputWorkExp"
+                        android:layout_alignStart="@id/inputProfPic"
+                        android:layout_alignEnd="@id/inputLastName"
+                        android:background="#f9f9f9"
+                        android:text="@string/birthday"
+                        android:textAllCaps="false"
+                        android:textColor="#75000000"
+                        android:textSize="18sp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/inputExtra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bdate"
+                        android:layout_alignStart="@id/inputProfPic"
+                        android:layout_alignEnd="@id/inputLastName">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|start"
+                            android:hint="@string/extra"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:maxLines="10"
+                            android:minLines="4"
+                            android:scrollbars="vertical"
+                            android:textSize="12sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/confirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/inputExtra"
+                        android:layout_alignEnd="@+id/inputLastName"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/confirm"
+                        android:textColor="@color/hyperLink"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/inputExtra"
+                        android:layout_alignStart="@+id/inputProfPic"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/cancel"
+                        android:textColor="@color/hyperLink"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </ViewFlipper>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pB"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
