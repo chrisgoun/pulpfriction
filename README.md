@@ -1,15 +1,15 @@
 # Pulp Friction
 This repository contains an application developed to empower discoverability between part-time job workers and freelancers/ business owners as part of a [student entrepreneurship contest.](https://jagreece.org/programs/virtual_business/)
 
-# Data managment
-Data are being stored using [google Firebase](https://firebase.google.com/) as a database and it's availiable API's for password security and account managment.
+# Data management
+Data are being stored using [google Firebase](https://firebase.google.com/) as a database and its available APIs for password security and account management.
 
 # Structural model
-The structural model used is the following: MainActivity class is the first activity being called on launch and is responsible for auto-login anf registration flows.
+The structural model used is the following: MainActivity class is the first activity being called on launch and is responsible for auto-login and registration flows.
 
-Res package contains ui images and xml layouts used by the app.
+Res package contains UI images and XML layouts used by the app.
 
-Objects package contains custom objects that help manage informations stored locally and on the database.We can use the objects created from these classes to get the wanted information.
+Objects package contains custom objects that help manage information stored locally and on the database. We can use the objects created from these classes to get the wanted information.
 
 Fragments package contains all fragments used by the app.
 
